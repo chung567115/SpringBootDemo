@@ -1,0 +1,24 @@
+# Server
+server:
+  port: 8080
+  context-path: /demo
+# Log
+logging:
+  path: /var/logs
+  file: demo.log
+# Other
+gitchat:
+  author: chungYML
+  addr: http://gitbook.cn/gitchat/activity/5a444c451f6ee91a25846ac1
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/sbd
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
